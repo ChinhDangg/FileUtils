@@ -1,0 +1,20 @@
+download mitmproxy: https://mitmproxy.org/
+
+mitmproxy
+
+mitmweb
+
+mitmdump -n -r flows --set hardump=images.har
+
+Set network settings - manual proxy
+HTTP Proxy: 127.0.0.1
+Port: 8080
+HTTPS Proxy: 127.0.0.1
+Port: 8080
+
+Install mitmproxy CA: http://mitm.it
+Install Firefox certificate
+
+Open Options -> Privacy & Security and click View Certificates... at the bottom of the page.
+    Click Import... and select the downloaded certificate.
+    Enable Trust this CA to identify websites and click OK.
